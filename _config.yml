@@ -13,6 +13,8 @@ url: "http://annawang7.github.io" # the base hostname & protocol for your site
 social:
   github: https://github.com/annawang7
   linkedin-square: https://linkedin.com/in/annawang7
+plugins:
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
