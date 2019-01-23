@@ -965,15 +965,15 @@ $baseurl: '{{ site.baseurl }}/assets';
 				&:first-child {
 					border-top: 0;
 				}
-            
+            }
             
             img {
                 max-width:100%;
                 max-height:100%;
                 margin: 0em 0em -2em 0em;
             }
-		}
-	}
+        }
+    }
 
 /* Spotlight */
 
@@ -1845,7 +1845,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 			}
 
 			#footer {
-				background-color: darken(_palette(bg), 8);
+                background-color: darken(_palette(bg), 8);
 			}
 		}
 	}
