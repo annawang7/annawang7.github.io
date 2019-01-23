@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-# Default, Defaults
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-
-# Jekyll Defaults
-title: Anna Wang
-email: annawang1@college.harvard.edu
-description: Thinker | Maker | Hello World-er
-
-# Where can people find your site?
-url: "http://localhost:4000"
-# When developing, set this ^ equal to whatever localhost you're using
-
-# Social Media links
-# Use these to link users to your organization's social media sites
-twitter:
-facebook:
-google:
-
-author: Anna Wang
-authorBio:
-=======
 # Welcome to Jekyll!
 #
 
@@ -44,4 +20,3 @@ plugins:
 markdown: kramdown
 #sass:
 #  style: compressed
->>>>>>> parent of dc2bf59... Change theme
