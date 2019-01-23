@@ -4,7 +4,7 @@ highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Jekyll Defaults
-title: Anna Wang | Personal Website
+title: Anna Wang
 email: annawang1@college.harvard.edu
 description: Thinker | Maker | Hello World-er
 
@@ -18,5 +18,5 @@ twitter:
 facebook:
 google:
 
-author: Nina Petropoulos
-authorBio: A English major by day, a musician by night, and a web developer because of the summer I was bored - my name's Nina and I hope you enjoy my Hello Portland theme, the second theme I've made with Jekyll.
+author: Anna Wang
+authorBio:
