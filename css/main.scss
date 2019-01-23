@@ -73,7 +73,6 @@ $baseurl: '{{ site.baseurl }}/assets';
 
 	a {
 		@include vendor('transition', ('color #{_duration(transitions)} ease', 'border-bottom-color #{_duration(transitions)} ease'));
-		border-bottom: dotted 1px;
 		color: inherit;
 		text-decoration: none;
 
@@ -210,6 +209,15 @@ $baseurl: '{{ site.baseurl }}/assets';
 	}
 
 /* Section/Article */
+    .site-title {
+        font-size: 2.35em;
+		line-height: 2.75em;
+
+		@include breakpoint(small) {
+			font-size: 2.1em;
+			line-height: 2.65em;
+		}  
+    }
 
 	section, article {
 		&.special {
@@ -465,7 +473,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 		position: relative;
 
 		> .label {
-			display: none;
+			font-size: 10px;
 		}
 
 		&.major {
@@ -891,14 +899,17 @@ $baseurl: '{{ site.baseurl }}/assets';
 		@include vendor('justify-content', 'center');
 		list-style: none;
 		padding: 0;
-		width: 100%;
+        width: 100%;
 
 		li {
-			@include padding(4em, 4em, (0,0,0,2em));
 			display: block;
 			position: relative;
 			text-align: left;
 			width: 50%;
+
+            .icon {
+                @include padding(4em, 4em, (0,0,0,2em));
+            }
 
 			@for $i from 1 through _misc(max-features) {
 				$j: 0.035 * $i;
@@ -934,7 +945,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 			}
 
 			@include breakpoint(medium) {
-				@include padding(3em, 2em);
+				// @include padding(3em, 2em);
 				text-align: center;
 
 				&:before {
@@ -954,7 +965,13 @@ $baseurl: '{{ site.baseurl }}/assets';
 				&:first-child {
 					border-top: 0;
 				}
-			}
+            
+            
+            img {
+                max-width:100%;
+                max-height:100%;
+                margin: 0em 0em -2em 0em;
+            }
 		}
 	}
 
@@ -1675,7 +1692,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/brooklyn-bridge.jpeg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1800,7 +1817,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/brooklyn-bridge.jpeg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1821,7 +1838,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/brooklyn-bridge.jpeg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
