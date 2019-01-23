@@ -1,22 +1,22 @@
-# Welcome to Jekyll!
-#
+# Default, Defaults
+markdown: redcarpet
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-# Site settings
-title: Anna Wang
-description: |
-  Personal Website
-owner: Anna Wang # or company name
-first_published: 2018 # if migrating another site, the year of your first publish
+# Jekyll Defaults
+title: Anna Wang | Personal Website
 email: annawang1@college.harvard.edu
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://annawang7.github.io" # the base hostname & protocol for your site
-social:
-  github: https://github.com/annawang7
-  linkedin-square: https://linkedin.com/in/annawang7
-plugins:
-  - jekyll-seo-tag
+description: Thinker | Maker | Hello World-er
 
-# Build settings
-markdown: kramdown
-#sass:
-#  style: compressed
+# Where can people find your site?
+url: "http://localhost:4000"
+# When developing, set this ^ equal to whatever localhost you're using
+
+# Social Media links
+# Use these to link users to your organization's social media sites
+twitter:
+facebook:
+google:
+
+author: Nina Petropoulos
+authorBio: A English major by day, a musician by night, and a web developer because of the summer I was bored - my name's Nina and I hope you enjoy my Hello Portland theme, the second theme I've made with Jekyll.
