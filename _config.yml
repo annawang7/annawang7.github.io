@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Default, Defaults
 markdown: redcarpet
 highlighter: pygments # or rouge or null
@@ -20,3 +21,27 @@ google:
 
 author: Anna Wang
 authorBio:
+=======
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Anna Wang
+description: |
+  Personal Website
+owner: Anna Wang # or company name
+first_published: 2018 # if migrating another site, the year of your first publish
+email: annawang1@college.harvard.edu
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://annawang7.github.io" # the base hostname & protocol for your site
+social:
+  github: https://github.com/annawang7
+  linkedin-square: https://linkedin.com/in/annawang7
+plugins:
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
+>>>>>>> parent of dc2bf59... Change theme
