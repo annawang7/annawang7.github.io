@@ -899,17 +899,23 @@ $baseurl: '{{ site.baseurl }}/assets';
 		@include vendor('justify-content', 'center');
 		list-style: none;
 		padding: 0;
-        width: 100%;
+		width: 100%;
+		
+		.icon {
+			@include padding(4em, 4em, (0,0,0,2em));
+		}
+
+		img {
+			max-width:100%;
+			max-height:100%;
+			padding: 1em;
+		}
 
 		li {
 			display: block;
 			position: relative;
 			text-align: left;
 			width: 50%;
-
-            .icon {
-                @include padding(4em, 4em, (0,0,0,2em));
-            }
 
 			@for $i from 1 through _misc(max-features) {
 				$j: 0.035 * $i;
@@ -965,13 +971,7 @@ $baseurl: '{{ site.baseurl }}/assets';
 				&:first-child {
 					border-top: 0;
 				}
-            }
-            
-            img {
-                max-width:100%;
-                max-height:100%;
-                margin: 0em 0em -2em 0em;
-            }
+			}
         }
     }
 
